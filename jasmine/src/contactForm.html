@@ -1,0 +1,33 @@
+<html>
+  <head>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/sidebar.css"></link>
+        <link rel="stylesheet" href="css/navbar.css"></link>
+        <link rel="stylesheet" href="css/form.css"></link>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/handlebars-1.0.rc.1.min.js"></script>
+        <script type="text/javascript" src="js/form.js"></script>
+  </head>
+  <body>
+       <form id="contact-form">
+         <div class="form-group center-block">
+           <label for="inputName">{{i18n "inputName"}}</label>
+             <input type="text" class="form-control contact-input" id="inputName" placeholder="{{i18n "name.placeholder"}}" name="{{i18n "inputName"}}"/>
+         </div>
+         <div class="form-group center-block">
+           <label for="inputEmail">{{i18n "inputEmail"}}</label>
+             <input type="email" class="form-control contact-input" id="inputEmail" placeholder="{{i18n "email.placeholder"}}" name="{{i18n "inputEmail"}}"/>
+           </div>
+         <div class="form-group center-block">
+           <label for="inputMessage">{{i18n "inputMessage"}}</label>
+            <textarea id="inputMessage" class="form-control contact-input" rows="3" placeholder="{{i18n "message.placeholder"}}" name="{{i18n "inputMessage"}}"/></textarea>
+         </div>
+         <input type="text" name="_gotcha" class="display-none"/>
+         <div class="text-center">
+           <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">{{i18n "submit"}}</button>
+         </div>
+       </form>
+  </body>
+</html>  
